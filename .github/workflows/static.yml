@@ -3,29 +3,29 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  # 当代码推送到 main 分支时触发
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v2
         with:
-          node-version: '16'  # 确保使用与你项目兼容的 Node.js 版本
+          node-version: '16'  # 使用 Node.js 16 版本
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci  # 使用 npm ci 安装依赖，确保使用锁文件中的版本
 
-      - name: Build project
-        run: vite build
+      - name: Build project using Vite
+        run: vite build  # 运行 Vite 构建命令
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./dist  # 指定生成的 `dist` 文件夹为发布目录
