@@ -18,11 +18,14 @@ jobs:
         with:
           node-version: '16'  # 使用 Node.js 16 版本
 
+      - name: Install pnpm
+        run: npm install -g pnpm  # 全局安装 pnpm
+
       - name: Install dependencies
-        run: npm ci  # 使用 npm ci 安装依赖，确保使用锁文件中的版本
+        run: pnpm install  # 使用 pnpm 安装依赖
 
       - name: Build project using Vite
-        run: vite build  # 运行 Vite 构建命令
+        run: vite build  # 使用 pnpm 运行 Vite 构建命令
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
