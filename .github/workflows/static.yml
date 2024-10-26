@@ -25,7 +25,7 @@ jobs:
         run: pnpm install --no-frozen-lockfile  # 使用 pnpm 安装依赖
 
       - name: Build project using Vite
-        run: vite build  # 使用 pnpm 运行 Vite 构建命令
+        run: pnpm run build  # 使用 pnpm 运行 Vite 构建命令
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
