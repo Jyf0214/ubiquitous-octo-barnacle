@@ -22,10 +22,13 @@ jobs:
         run: npm install -g pnpm  # 全局安装 pnpm
 
       - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile  # 使用 pnpm 安装依赖
+        run: npm install
 
       - name: Build project using Vite
-        run: pnpm run build  # 使用 pnpm 运行 Vite 构建命令
+        run: npm run build  # 使用 pnpm 运行 Vite 构建命令
+
+      - name: Build project u
+        run: npm run lint  # 使用 pnpm 运行 Vite 构建命令
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
