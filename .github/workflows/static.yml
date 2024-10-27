@@ -21,9 +21,6 @@ jobs:
       - name: Install pnpm
         run: npm install # 全局安装 pnpm
 
-      - name: Install dependencies
-        run: npm run dev
-
       - name: Build project using Vite
         run: npm run build  # 使用 pnpm 运行 Vite 构建命令
 
