@@ -1,1 +1,0 @@
-import{_ as t,b as s,d as o,e as c,t as _}from"./index-6bb17dc0.js";const l={class:"electro-no-result"},r={class:"electro-no-result-text"},a={__name:"ElectroNoResult",props:{title:{type:String,default:""}},setup(e){return(n,p)=>(s(),o("div",l,[c("p",r,_(e.title),1)]))}},u=t(a,[["__scopeId","data-v-cf67e077"]]);export{u as E};
