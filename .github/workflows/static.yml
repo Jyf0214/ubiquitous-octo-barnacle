@@ -3,7 +3,7 @@ name: Deploy Hexo to GitHub Pages and Update gh-pages Branch
 on:
   push:
     branches:
-      - main # 当推送到 main 分支时触发
+      - master # 当推送到 main 分支时触发
   workflow_dispatch: # 允许手动触发
 
 permissions:
