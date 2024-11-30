@@ -82,14 +82,14 @@ tags: [域名注册, 免费域名, 建站资源]
 
 ## 8. Secure.nom.za  
 **域名类型**：二级域名  
-**注册地址**：[https://secure.nom.za/](https://secure.nom.za/)  
+**注册地址**：[https://secure.nom.za/](https://secure.nom.za/)
 
 **备注**：只能注册个人姓名域名，需人工审核。注册成功后可绑定到 Cloudflare 使用。现注册无法收到验证码邮件（Gmail,outlook）。
 ---
 
 ## 9. NC.me  
 **域名类型**：顶级域名  
-**注册地址**：[https://nc.me/](https://nc.me/)  
+**注册地址**：[https://nc.me/](https://nc.me/)
 
 **域名后缀**：`.me`  
 **备注**：仅限学生用户免费申请。
