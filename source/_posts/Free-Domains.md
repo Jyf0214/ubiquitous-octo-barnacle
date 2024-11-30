@@ -84,7 +84,6 @@ tags: [域名注册, 免费域名, 建站资源]
 **域名类型**：二级域名  
 **注册地址**：[https://secure.nom.za/](https://secure.nom.za/)
 
-**备注**：只能注册个人姓名域名，需人工审核。注册成功后可绑定到 Cloudflare 使用。现注册无法收到验证码邮件（Gmail,outlook）。
 ---
 
 ## 9. NC.me  
