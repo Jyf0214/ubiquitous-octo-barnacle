@@ -47,7 +47,7 @@ jobs:
 
       # Step 5: 添加 CNAME 文件
       - name: Create CNAME file
-        run: echo "amiya.giize.com" > public/CNAME
+        run: echo "kashino.byinter.net" > public/CNAME
 
       # Step 6: 上传生成的静态文件作为工件
       - name: Upload artifact
