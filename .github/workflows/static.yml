@@ -37,9 +37,7 @@ jobs:
       # Step 3: 安装 Hexo 和依赖项
       - name: Install Hexo and dependencies
         run: |
-          npm install -g hexo-cli
-          npm install hexo-server hexo-browsersync hexo-renderer-pug --save
-          npm install
+          npm install -g hexo-cli && npm install hexo-server hexo-browsersync hexo-renderer-pug --save && npm install
 
       # Step 4: 生成静态文件
       - name: Generate static files
